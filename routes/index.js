@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.post('/create', function(req, res, next) {
   userModel.create({
     username:req.body.username,
+    email:req.body.email,
     name:req.body.name,
     age:req.body.age,
     image:req.body.image
